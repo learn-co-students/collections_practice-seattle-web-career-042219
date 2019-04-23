@@ -28,6 +28,7 @@ end
 def find_a(array)
   array.select do |value|
     value[0] == "a"
+  end
 end
 
 def sum_array(array)
@@ -35,11 +36,11 @@ def sum_array(array)
 end
 
 def add_s(array)
-  array.collect do |value|
+  array.map do |value|
     if array[1] == value
       value
     else
-      word + "s"
+      value + "s"
     end
   end 
 end
